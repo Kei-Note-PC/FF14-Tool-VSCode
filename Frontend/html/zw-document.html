@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="黄道十二文書の討伐対象マップ" />
+    <title>黄道十二文書 — FF14 Tools</title>
+    <link rel="stylesheet" href="/Frontend/javascript/styles.css" />
+  </head>
+  <body class="home-body">
+    <main class="home-shell simple-tool-page document-page">
+      <a class="back-link" href="/Frontend/html/zw.html">← 黄道十二文書一覧へ戻る</a>
+      <header class="home-header">
+        <p class="home-kicker">ZODIAC WEAPON / DOCUMENT</p>
+        <h1 id="document-title">黄道十二文書</h1>
+        <p class="home-lead">討伐対象の場所をマップで確認できます。</p>
+      </header>
+      <section class="document-detail" aria-labelledby="document-title">
+        <div id="document-gallery" class="document-gallery"></div>
+        <div class="document-detail__footer">
+          <p id="document-description"></p>
+          <a id="source-link" class="source-link" href="" target="_blank" rel="noreferrer">参照元ページを開く ↗</a>
+        </div>
+      </section>
+    </main>
+    <div id="target-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="target-modal-title" hidden>
+      <div class="modal-inner target-modal-inner">
+        <button id="target-modal-close" class="modal-close" type="button" aria-label="閉じる">×</button>
+        <div class="target-modal-content">
+          <p class="home-kicker">TARGET LOCATION</p>
+          <h2 id="target-modal-title"></h2>
+          <p id="target-modal-note" class="target-modal-note"></p>
+          <img id="target-modal-map" class="target-modal-map" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="/Frontend/javascript/zw-documents.js?v=20260928-5" defer></script>
+  </body>
+</html>
